@@ -1,0 +1,6 @@
+export * as addressController from './address'
+export * as customerController from './customer'
+export * as labelController from './label'
+export * as pointLogController from './pointLog'
+export * as rewardController from './reward'
+export * as rewardLogController from './rewardLog'

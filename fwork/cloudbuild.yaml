@@ -1,0 +1,21 @@
+# This is script for https://cloud.google.com/cloud-build/
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    id: MOVE-DOTENV-APP-YAML
+    entrypoint: bash
+    args:
+      - '-e'
+      - '-c'
+      - |
+        cp .env.$_ENVIRONMENT .env
+  # Install
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['install']
+  # Build
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'build']
+
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['app', 'deploy', '--no-promote']
+    timeout: '1600s'
+timeout: '3600s'

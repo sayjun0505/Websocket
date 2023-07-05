@@ -1,0 +1,11 @@
+node_modules
+npm-debug.log
+*.pem
+!mock-cert.pem
+.env
+coverage
+lib
+.eslintcache
+.DS_Store
+dist
+.vscode

@@ -1,0 +1,13 @@
+.create-channel-modal .MuiDialog-paper {
+  width: 800px;
+}
+@media only screen and (max-width: 500px) {
+  .create-channel-modal .MuiDialog-paper {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .create-channel-modal .MuiDialog-paper {
+    width: 600px;
+  }
+}

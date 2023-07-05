@@ -1,0 +1,11 @@
+export * from './activity.entity'
+export * from './chat.entity'
+export * from './message.entity'
+export * from './comment.entity'
+export * from './mention.entity'
+
+export * as activityModel from './activity.model'
+export * as chatModel from './chat.model'
+export * as mentionModel from './mention.model'
+export * as messageModel from './message.model'
+export * as commentModel from './comment.model'
